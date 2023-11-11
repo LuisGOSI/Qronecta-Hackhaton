@@ -53,7 +53,7 @@ Si estás interesado en conocer más sobre el propósito, la visión y la misió
 
 ¿Quieres ver QroMovil en acción? Haz clic en el botón a continuación para explorar nuestras características y funcionalidades actuales:
 
-[![Acceder a QroMovil](https://img.shields.io/badge/▶️%20Acceder%20a-QroMovil-blue?style=for-the-badge&logo=web)](https://qromovil.onrender.com)
+[![Acceder a QroMovil](https://img.shields.io/badge/▶️%20Acceder%20a-QroMovil-blue?style=for-the-badge&logo=web)](https://qronecta.onrender.com)
 
 
 ## 📋 Requisitos
@@ -65,10 +65,8 @@ Si estás interesado en conocer más sobre el propósito, la visión y la misió
 - Deberás tener Node.js y npm (gestor de paquetes de Node) instalados. [Descargar desde el sitio oficial de Node.js](https://nodejs.org/).
 
 ### 🗄️ Base de Datos
-- **ORM**: Utilizamos [Prisma](https://www.prisma.io/) como nuestro ORM para facilitar la gestión y manipulación de la base de datos.
-- **Host**: Confiamos en [PlanetScale](https://planetscale.com/) para el alojamiento de nuestra base de datos, aprovechando su alta disponibilidad y escalabilidad.
-- **Lenguaje de Base de Datos**: Elegimos [MySQL](https://www.mysql.com/) por su confiabilidad y eficiencia en el manejo de datos.
-
+- **Base de datos**: Utilizamos [Firebase](https://firebase.google.com/) como BD para facilitar la gestión y manipulación de la base de datos.
+- **Host**: Confiamos en [Render](https://render.com/) para el alojamiento de nuestra base de datos, aprovechando su alta disponibilidad y escalabilidad.
 
 ### Entorno de desarrollo
 - Cualquier editor de texto o IDE que soporte desarrollo en JavaScript/Node.js. Ejemplos: Visual Studio Code, Atom, WebStorm, etc.
