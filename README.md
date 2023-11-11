@@ -7,6 +7,14 @@
   <img src="/web/images/Completo_letra-removebg-preview.png" alt="Logo" width="200"><br><br>
 </p>
 
+## Colaboradores:
+
+Aaron Olguin Pichardo - davidop.ti22@utsjr.edu.mx
+Abril Sanchez Camacho - abrilsc.ti22@utsjr.edu.mx
+Estefania Cabal Aguado - estafinaca.ti22@utsjr.edu.mx
+Luis Ignacio Gonzalez - ignaciogs.ti22@utsjr.edu.mx
+Victor Manuel Rangel - manuelrm.ti22@utsjr.edu.mx
+
 ## Objetivo:
 El proposito de este proyecto es reducir la brecha digital, creando una aplicacion web  diseñada para facilitar la interacción de los ciudadanos con la tecnología y los servicios gubernamentales en el estado de Querétaro.     
 
