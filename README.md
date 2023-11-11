@@ -39,24 +39,24 @@ El proposito de este proyecto es reducir la brecha digital, creando una aplicaci
 
 Estamos emocionados de compartir nuestra visión para Qronecta. Si estás interesado en explorar nuestros diseños y mockups, te invitamos a visitar nuestra presentación interactiva en Figma:
 
-[![Diseños QroMovil en Figma](https://img.shields.io/badge/🔍%20Ver%20Mockups%20en-Figma-blue?style=for-the-badge&logo=figma)](https://www.figma.com/file/AvbtKf9Adwkbzo6m9PEbun/Proyecto-Hakchaton?type=design&node-id=0%3A1&mode=design&t=Mm0h05pQSSo0zqRL-1)
+[![Diseños Qronecta en Figma](https://img.shields.io/badge/🔍%20Ver%20Mockups%20en-Figma-blue?style=for-the-badge&logo=figma)](https://www.figma.com/file/AvbtKf9Adwkbzo6m9PEbun/Proyecto-Hakchaton?type=design&node-id=0%3A1&mode=design&t=Mm0h05pQSSo0zqRL-1)
 
 Descubre el viaje y la inspiración detrás de nuestra aplicación.
 
 ### 📖 Presentación de Propuesta
 
-Si estás interesado en conocer más sobre el propósito, la visión y la misión detrás de QroMovil, te invitamos a ver nuestra presentación completa en Canva:
+Si estás interesado en conocer más sobre el propósito, la visión y la misión detrás de Qronecta, te invitamos a ver nuestra presentación completa en Canva:
 
-[![Presentación QroMovil](https://img.shields.io/badge/📔%20Ver%20Presentación%20en-Canva-pink?style=for-the-badge&logo=canva)](https://www.canva.com/design/DAFsGMhce20/g03Cor5nfaw0sYYrCLbEZg/edit?utm_content=DAFsGMhce20&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[![Presentación Qronecta](https://img.shields.io/badge/📔%20Ver%20Presentación%20en-Canva-pink?style=for-the-badge&logo=canva)](https://www.canva.com/design/DAFsGMhce20/g03Cor5nfaw0sYYrCLbEZg/edit?utm_content=DAFsGMhce20&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
 
 ## 🚀 Acceso al Proyecto
 
-¿Quieres ver QroMovil en acción? Haz clic en el botón a continuación para explorar nuestras características y funcionalidades actuales:
+¿Quieres ver Qronecta en acción? Haz clic en el botón a continuación para explorar nuestras características y funcionalidades actuales:
 
-[![Acceder a Qronecta](https://img.shields.io/badge/▶️%20Acceder%20a-QroMovil-blue?style=for-the-badge&logo=web)](https://qronecta.onrender.com)
+[![Acceder a Qronecta](https://img.shields.io/badge/▶️%20Acceder%20a-Qronecta-blue?style=for-the-badge&logo=web)](https://qronecta.onrender.com)
 
 
 ## 📋 Requisitos
@@ -69,7 +69,7 @@ Si estás interesado en conocer más sobre el propósito, la visión y la misió
 
 ### 🗄️ Base de Datos
 - **Base de datos**: Utilizamos [Firebase](https://firebase.google.com/) como BD para facilitar la gestión y manipulación de la base de datos.
-- **Host**: Confiamos en [Render](https://render.com/) para el alojamiento de nuestra base de datos, aprovechando su alta disponibilidad y escalabilidad.
+- **Host**: Confiamos en [Render](https://render.com/) para el alojamiento de nuestra base de datos, aprovechando su alta disponibilidad y escalabilidad y por su facil uso para suporte de aplicacciones webs 
 
 ### Entorno de desarrollo
 - Cualquier editor de texto o IDE que soporte desarrollo en JavaScript/Node.js. Ejemplos: Visual Studio Code, Atom, WebStorm, etc.
