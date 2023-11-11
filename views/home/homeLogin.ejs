@@ -1,0 +1,158 @@
+<!-- 
+</head>
+<body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/4.1.0/intro.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      introJs().setOptions({
+        steps: [
+          {
+            element: document.querySelector('.primer-paso'),
+            intro: '¡Hola, Luis es genial! 😎'
+          }
+        ]
+      }).start();
+    });
+  </script>
+
+  <div class="primer-paso">Paso 1</div>
+
+</body> -->
+<%- include("../header/index")%> 
+
+<link rel="stylesheet" href="/css/wave.css">
+
+<%- include("../menu/menuGeneral")%>
+
+<header class="hero">
+  <div class="container">
+    <section class="hero__container">
+      <div class="projects__grid">
+    
+        <article class="container text-center">
+          <div class="hero__texts">
+            <h1 class="hero__title " style="color: #0d3b70;">¡Bienvenido a Qronecta!</h1>
+            <h2 class="hero__subtitle" style="color: #0d3b70; font-weight: 600;">Comienza a aprender con Qronecta</h2>
+            <a href="#scrollspyHeading1"><button class="btn mt-5" style="border-radius: 20px; background-color: #266fb6; color: #fff; width: 200px;"><h1 style="font-size: xx-large;">Iniciar</h1></button> </a>
+        </div>
+        </article>
+    
+    </div>  
+    </section>
+  </div>
+  <div id="scrollspyHeading1" class="hero__wave" style="overflow: hidden;" ><svg  viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path class="light-mode-wave" id="wave-color" d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none;"></path></svg></div>
+</header>
+<br><br>
+
+<h2 class="text-center" style="z-index: 999;">Cursos recomendados</h2>
+<div id="carouselTodosLosCursos" class="carousel slide" style="width: 90%; margin: auto;">
+  <div class="carousel-inner">
+    <% var count = 0; %>
+    <% cursos.forEach((curso, index) => { %>
+      <% if (count % 3 == 0) { %>
+        <div class="carousel-item <%= count == 0 ? 'active' : '' %>">
+          <div class="row">
+      <% } %>
+            <div class="col-md-4">
+              <a href="/curso/<%= curso.id %>">
+                <div class="carousel-image">
+                  <video height="400px" src="/videos/<%= curso.video %>?v=<%= Date.now() %>" class="d-block w-100" alt="...">
+                  </video>
+                  <div class="overlay">
+                    <p><%= curso.titulo %></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+      <% if (count % 3 == 2) { %>
+          </div>
+        </div>
+      <% } %>
+      <% count++; %>
+    <% }) %>
+    <% if (count % 3 != 0) { %>
+        </div>
+      </div>
+    <% } %>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTodosLosCursos"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselTodosLosCursos"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+<style>
+  .carousel-image {
+  position: relative;
+}
+
+.carousel-image:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+</style>
+
+<br><br>
+
+<section class="presentation container">
+
+  <img src="/images/Simple_noletra.png" class="presentation__picture" alt="">
+  <h2 class="subtitle">¿Quienes somos?</h2>
+  <p class="presentation__copy">"En QROnecta, tenemos como misió transformar la interacción ciudadana con los servicios gubernamentales en Querétaro, proporcionando una plataforma intuitiva y educativa que simplifique trámites, fomente la participación activa y cierre la brecha digital. Buscamos empoderar a cada ciudadano, independientemente de su edad, para que acceda y participe de manera informada en los procesos gubernamentales, contribuyendo así a construir una comunidad más conectada y tecnológicamente inclusiva en el estado de Querétaro."</p>
+  <div class="subt mt-5">Qué opinan sobre nosotros</div>
+  
+</section>
+
+<section class="presentation container">
+  <div class="containerprov">
+    <div id="prov1">
+      <img src="https://www.thispersondoesnotexist.com/" alt="provedor1" height="80px" width="80px">
+      <p>“Hoy mi padre pudo aprender a descargar apps en su telefono gracias a su curso. </p>
+      <footer>"Leslie"</footer>
+    </div>
+    <div id="prov2">
+      <img src="https://thiscatdoesnotexist.com/" alt="provedor2" height="80px" width="80px">
+      <p>“Me gusto mucho porque aprendi como hacer un tramite del SAT, sin salir de mi casa.”</p>
+      <footer>"Sew K"</footer>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <style>
+  video:hover{
+    object-fit: cover;
+    cursor: pointer;
+  }
+</style> -->
+
+
+<%- include("../footer/footerhome")%>

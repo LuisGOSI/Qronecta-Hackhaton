@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+
+:root{
+    --background: linear-gradient(135deg, #8b9ff370 0%, rgba(255, 255, 255, 0.377) 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.dark-mode-wave {
+    fill: #222;
+    color: #fff;
+  }
+
+  /* Estilos para el modo día */
+.light-mode-wave {
+    fill: #fff;
+    color: #333;
+  }
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+.container1{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 600px;
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.presentation{
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 170px;
+    height: 200px;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+    /* object-fit: cover; */
+    object-position: top;
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentation__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+
+.hero {
+    height: 125vh;
+    background-image: var(--background), url('../images/IMG_Inicio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    top: 30px; /* Ajusta este valor según tu necesidad */
+}  
+.hero1 {
+    height: 50vh;
+    background-image: var(--background), url('../images/IMG_Inicio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    top: 30px; /* Ajusta este valor según tu necesidad */
+}  
+
+.hero .container{
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav__items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--cta{
+    border: 1px solid #fff;
+}
+
+.nav__items--footer{
+    padding: 10px;
+
+}
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+    
+}
+.hero__container1{
+    display: flex;
+    height: calc(50vh - 70px);
+    align-items: center;
+    color: #fff;
+    
+}
+
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__title{
+    font-size: 5rem;
+    font-weight: 510;
+}
+
+.herp__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.hero__cta{
+    display: inline-block;
+    background: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/*Products*/
+
+.projects{
+    background: #f2f2f2;
+}
+
+.projects__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.projects__item{
+    position: relative;
+    width: 100%;
+    height: 100;
+    overflow: hidden;
+}
+
+.projects__img{
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover ;
+    cursor: pointer ;
+
+}
+
+.projects__hover{
+    position: absolute !important;
+    background: #266fb6 !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    color: #fff !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    transform: translateX(100%) !important;
+    cursor: pointer !important;
+    transition: transform .3s ease-in-out !important;
+}
+
+.projects__item:hover .projects__hover{
+    transform: translateX(0%);
+}
+
+.containerprov {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .containerprov div {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+  }
+
+  .containerprov img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .containerprov p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .containerprov footer {
+    font-style: italic;
+    color: #666;
+  }
+
+  .subt {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+<%- include("../header/index")%> <%- include("../menu/menuAdmin")%>
+
+<link rel="stylesheet" href="/css/adminAdd.css" />
+<div>
+  <form
+    action="/nuevocurso"
+    method="POST"
+    enctype="multipart/form-data"
+    class="formAdmin"
+    id="uploadForm"
+  >
+    <div>
+      <div>
+        <h1>Nuevo curso</h1>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="titulo"
+          id="titulo"
+          placeholder="Titulo del curso"
+          autofocus
+        />
+        <select name="tipo" id="tipo">
+          <option value="" disabled selected>Selecciona el tipo</option>
+          <option value="aprende">Aprende</option>
+          <option value="tramites">Trámites</option>
+          <option value="capacitacion">Capacitación</option>
+        </select>
+        <input
+          type="text"
+          name="descripcion"
+          id="descripcion"
+          placeholder="Descripcion"
+        />
+        <input type="text" name="autor" id="autor" placeholder="Autor" />
+        <input type="file" name="video" id="video" placeholder="Subir video" onchange="uploadFile()" />
+      </div>
+      <div>
+        <br><br>
+        <button id="btnok" type="submit">Subir curso</button>
+        <a class="cancelar" href="/">Cancelar</a>
+      </div>
+
+      <div id="progressWrapper">
+        <div id="progressBar"></div>
+        <div id="progressLabel">0%</div>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<style>
+  #progressWrapper {
+    display: none;
+    margin-top: 20px;
+}
+
+#progressBar {
+    width: 0;
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+#progressLabel {
+    margin-top: 10px;
+}
+</style>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function uploadFile() {
+    const fileInput = document.getElementById('fileInput');
+    const progressBar = document.getElementById('progressBar');
+    const progressLabel = document.getElementById('progressLabel');
+    const progressWrapper = document.getElementById('progressWrapper');
+
+    const file = fileInput.files[0];
+
+    if (file) {
+        const formData = new FormData();
+        formData.append('file', file);
+
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', 'tu_servidor_subida_archivos', true);
+
+        xhr.upload.onprogress = function (e) {
+            if (e.lengthComputable) {
+                const percent = (e.loaded / e.total) * 100;
+                progressBar.style.width = percent + '%';
+                progressLabel.innerHTML = percent.toFixed(2) + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            // La subida se ha completado
+            if (xhr.status === 200) {
+                alert('Archivo subido con éxito');
+            } else {
+                alert('Error al subir el archivo');
+            }
+            // Restaurar la barra de progreso a su estado inicial
+            progressBar.style.width = '0%';
+            progressLabel.innerHTML = '0%';
+            progressWrapper.style.display = 'none';
+        };
+
+        xhr.onerror = function () {
+            alert('Error de red al intentar subir el archivo');
+            // Restaurar la barra de progreso a su estado inicial
+            progressBar.style.width = '0%';
+            progressLabel.innerHTML = '0%';
+            progressWrapper.style.display = 'none';
+        };
+
+        // Mostrar la barra de progreso
+        progressWrapper.style.display = 'block';
+
+        // Enviar la solicitud
+        xhr.send(formData);
+      } else {
+        alert('Selecciona un archivo antes de subirlo.');
+    }
+  }
+  });
+
+</script>

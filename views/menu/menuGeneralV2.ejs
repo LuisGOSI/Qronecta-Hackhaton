@@ -1,0 +1,143 @@
+<nav class="navbar fixed-top" style="background-color: #266fb6">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand"
+      href="/"
+      style="
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+      "
+      >&nbsp;&nbsp;&nbsp;
+      <img
+        src="/images/Completo_letra-removebg-preview.png"
+        alt="Bootstrap"
+        width="15%"
+        height="12%"
+        class=""
+      />
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <form action="/buscarCurso" class="d-flex mt-1" method="POST">
+      <div class="input-group"s>
+        <button type="submit" class="input-group-text btn btn-primary">
+          <i class="bi bi-search"></i>
+        </button>
+        <input
+          type="search"
+          name="search"
+          class="form-control"
+          placeholder="Buscar"
+          aria-label="Buscar"
+        />
+      </div>
+    </form>
+    <button
+      id="offcanvasButton"
+      style="background-color: #fff;"
+      class="offcanvasButton navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+      data-hint="Hello! 👋 Click on this link"
+      data-hint-position="bottom-middle"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      style="background-color: #266fb6; width: 300px;"
+      style="fill: #fff;" 
+    >
+      <div class="offcanvas-header">
+        <img
+          src="/images/Simple_noletra.png"
+          alt="Bootstrap"
+          width="40px"
+          height="45px"
+          class="d-inline-block align-text-top"
+          style="margin-left: 100px;"
+        />
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="inicioButton nav-item">
+            <a class="nav-link" href="/" style="color: #fff; font-size: x-large; text-decoration: underline;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+              </svg>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="iniciarSesionButton nav-link" href="/iniciarSesion" style="color: #fff; font-size: x-large; text-decoration: underline;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              </svg>Iniciar sesion</a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a
+                id="cursosButton"
+                class="cursosButton nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="font-size: x-large; color: #fff;"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+              </svg> Cursos
+              </a>
+              <ul class="dropdown-menu" style="background-color: #266fb6;">
+                <li><a class="tramitesButton dropdown-item" href="/tipo/tramites" style="font-size: large; color: #fff; " >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-file-earmark-arrow-up-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.354 9.854a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 8.707V12.5a.5.5 0 0 1-1 0V8.707L6.354 9.854z"/>
+                  </svg> Trámites en Línea</a></li>
+                <li><a class="capacitacionesButton dropdown-item" href="/tipo/capacitacion" style="font-size: large; color: #fff;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                  </svg> Capacitaciones</a></li>
+                <li><a class="aprendeButton dropdown-item" href="/tipo/aprende" style="font-size: large; color: #fff;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg> Aprende</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="ayudaButton nav-link" href="/ayuda" style="font-size: x-large; color: #fff;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+              </svg> Ayuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="cerrarSesionButton nav-link" href="/cerrarSesion" style="font-size: x-large; color: #fff;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16" style="color: #000; margin-right: 10px;">
+                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+              </svg> Cerrar Sesión</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+
+<style>
+  .dropdown-item:hover{
+    background-color: #0e4883;
+  }
+</style>
