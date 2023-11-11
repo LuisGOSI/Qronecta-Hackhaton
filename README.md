@@ -14,27 +14,22 @@ El proposito de este proyecto es reducir la brecha digital, creando una aplicaci
 ## Funcionalidades del proyecto
 
 1. **- Centralización de Información.**
-   - Creación de usuario.
-   - Ingreso a través de un usuario y contraseña.
-   - Menú de usuario para observar datos, consultar QroPuntos, cerrar o eliminar sesión.
-   - Acumulación de puntos (QroPuntos) al realizar reportes, sugerencias o observaciones sobre el servicio del transporte y sobre la app.
+
 
 2. **- Capacitación Accesible.**
-   - Consultar el número de rutas y su recorrido.
+
 
 3. **- Educación Básica**
-   - Ingresar dirección actual y visualizar transportes cercanos.
-   - Apartados de "Bus", "Taxi" y "Bici" con servicio y ubicación de cada uno.
+
 
 4. **Reportes**
-   - Realizar reportes a través de la página y ganar puntos.
 
 5. **Escalabilidad**
-   - En etapas futuras se considera la implementación de un servicio de "Emergencias" para solicitar asistencia policial cercana en caso de inconvenientes.
+   - En etapas futuras se considera la implementación de un servicio alianors con intituciones educativas para mejor contenido
 
 ### 🎨 Diseño y Mockups
 
-Estamos emocionados de compartir nuestra visión para QroMovil. Si estás interesado en explorar nuestros diseños y mockups, te invitamos a visitar nuestra presentación interactiva en Figma:
+Estamos emocionados de compartir nuestra visión para Qronecta. Si estás interesado en explorar nuestros diseños y mockups, te invitamos a visitar nuestra presentación interactiva en Figma:
 
 [![Diseños QroMovil en Figma](https://img.shields.io/badge/🔍%20Ver%20Mockups%20en-Figma-blue?style=for-the-badge&logo=figma)](https://www.figma.com/file/AvbtKf9Adwkbzo6m9PEbun/Proyecto-Hakchaton?type=design&node-id=0%3A1&mode=design&t=Mm0h05pQSSo0zqRL-1)
 
@@ -53,7 +48,7 @@ Si estás interesado en conocer más sobre el propósito, la visión y la misió
 
 ¿Quieres ver QroMovil en acción? Haz clic en el botón a continuación para explorar nuestras características y funcionalidades actuales:
 
-[![Acceder a QroMovil](https://img.shields.io/badge/▶️%20Acceder%20a-QroMovil-blue?style=for-the-badge&logo=web)](https://qronecta.onrender.com)
+[![Acceder a Qronecta](https://img.shields.io/badge/▶️%20Acceder%20a-QroMovil-blue?style=for-the-badge&logo=web)](https://qronecta.onrender.com)
 
 
 ## 📋 Requisitos
