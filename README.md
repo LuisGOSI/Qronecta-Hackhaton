@@ -33,7 +33,7 @@ El proposito de este proyecto es reducir la brecha digital, creando una aplicaci
 4. **Reportes**
 
 5. **Escalabilidad**
-   - En etapas futuras se considera la implementación de un servicio alianors con intituciones educativas para mejor contenido
+   - En etapas futuras se considera la implementación de un servicio de alianzas con intituciones educativas para implementar mas y mejor contenido
 
 ### 🎨 Diseño y Mockups
 
